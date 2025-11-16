@@ -1,6 +1,6 @@
 /**
  * 
- *     Aerodactyl 11 (Cactus)
+ *     Zypherous 11 (Cactus)
  * 
  */
 
@@ -133,12 +133,12 @@ if (cluster.isMaster) {
 
     moduleFiles.forEach(file => {
       const module = require('./modules/' + file);
-      if (!module.load || !module.AerodactylModule) {
+      if (!module.load || !module.ZypherousModule) {
         modulesTable.push({ File: file, Status: 'No module information', 'Target Platform': 'Unknown' });
         return;
       }
     
-      const { name, target_platform } = module.AerodactylModule;
+      const { name, target_platform } = module.ZypherousModule;
   
       modulesTable.push({ File: file, Name: name, Status: 'Module loaded!', 'Target Platform': target_platform });
     });
@@ -146,7 +146,7 @@ if (cluster.isMaster) {
     console.table(modulesTable);
   
     const numCPUs = settings.clusters;
-    console.log(chalk.gray('Starting workers on Aerodactyl ' + settings.version));
+    console.log(chalk.gray('Starting workers on Zypherous ' + settings.version));
     console.log(chalk.gray(`Master ${process.pid} is running`));
     console.log(chalk.gray(`Forking ${numCPUs} workers...`));
   
@@ -212,7 +212,7 @@ if (cluster.isMaster) {
   module.exports.app = app;
 
   app.use((req, res, next) => {
-    res.setHeader("X-Developed-By", "Crater");
+    res.setHeader("X-Developed-By", "Vspcoderz");
     next();
   });
 

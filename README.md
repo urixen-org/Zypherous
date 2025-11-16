@@ -34,7 +34,7 @@ Warning: You need Pterodactyl already set up on a domain for this method to work
 
 <strong>1.2</strong> Download Zypherous files in /var/www/Zypherous :
 
-- `git clone https://github.com/Crater-Industries/Zypherous.git /var/www/Zypherous`
+- `git clone https://github.com/urixen-org/Zypherous.git /var/www/Zypherous`
 
 <strong>1.3</strong> Installing required node modules (and build dependencies to avoid errors) :
 
@@ -83,7 +83,7 @@ Making the dashboard runs on startup:
 To stop a currently running Zypherous instance, use `pm2 stop Zypherous`
 
 # Credits
-<strong>1.1</strong> Made with ❤️ by Team Zypherous  
+<strong>1.1</strong> Made with ❤️ by <a href="https://github.com/urixen-org">Vspcoderz</a>  
 
 # Nginx Proxy Config
 

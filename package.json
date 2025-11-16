@@ -1,9 +1,9 @@
 {
-  "name": "aerodactyl",
+    "name": "Zypherous",
   "version": "11.0.0",
-  "description": "The official Aerodactyl client area for the Pterodactyl Panel.",
+  "description": "The official Zypherous client area for the Pterodactyl Panel.",
   "main": "app.js",
-  "author": "Crater",
+  "author": "Vspcoderz (https://github.com/urixen-org)",
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "@keyv/sqlite": "^3.5.2",
